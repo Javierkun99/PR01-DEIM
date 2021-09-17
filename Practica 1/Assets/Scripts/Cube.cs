@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    //Toca usar el "+"
+    //Toca contatenar
    
    public int num1;
    [SerializeField] int num2;
@@ -18,7 +18,7 @@ public class Cube : MonoBehaviour
     void Start()
     {
        resultado = num1 + num2;
-       print (resultado);
+        print("El resultado es:" + num1);
     }
 
     // Update is called once per frame
