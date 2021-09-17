@@ -4,26 +4,24 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    //Toca contatenar
-   
-   public int num1;
-   [SerializeField] int num2;
-
-    private int resultado;
-
-
-
+    //Contador de ciclos usando Update
+    [SerializeField] int a = 3;
+ 
 
     // Start is called before the first frame update
     void Start()
     {
-       resultado = num1 + num2;
-        print("El resultado es:" + num1);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (a >= 15)
+        {
+            print("Es mayor que 15");
+        }
+         a=a+1;
+        print(a);
     }
 }
