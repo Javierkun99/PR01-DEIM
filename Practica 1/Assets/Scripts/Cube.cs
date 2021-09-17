@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    // Esto es para las variables distintas que hay que hacer
-
-    private int n = 5;
-    private float y = 25.7f;
-    private bool myBool = true;
-    private string myString = "Buenas gente";
+    //Pongo variables de ambito publico
+   
+    public int myVar = 10;
+    public int y = 54;
+    int myResult;
 
     // Start is called before the first frame update
     void Start()
     {
-        print(y);
+        myResult = myVar + y;
 
-
+        print(myResult);
     }
 
     // Update is called once per frame
