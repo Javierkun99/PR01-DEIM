@@ -4,40 +4,42 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    //Contador de ciclos de while y for
-    [SerializeField] string a = "vidas";
-    [SerializeField] string b = "Tu personaje tiene";
+    //A ver como hago los numeros al azar
+    [SerializeField] string a = "Benito";
+    [SerializeField] string b = "Elver";
 
-    public int c = 7;
+    public int f1;
     public int d = 51;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        for (c = 0; c < 100; c++)
+        while (d != 60) 
         {
-            if (c < 8)
+            
 
-            {
+            d = Random.Range(56, 61);
 
-
-                print("Es mayor que 8");
-            }
-
-            else if (d >= 68)
-            {
-
-
-                print("Es igual a 68");
-            }
+            print(d);
         }
-           
-}
+
+       
+
+
+
+
+    }
+
+
 
     // Update is called once per frame
     void Update()
     {
+
         
+        
+
     }
 }
