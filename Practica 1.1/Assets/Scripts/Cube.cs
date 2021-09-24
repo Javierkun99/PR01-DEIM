@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    //Dichoso programa. Espero que no me de dolor de cabeza XD
+    //Je,je... toca hacer operaciones matematicas usando las booleanas
 
- 
+    
+     [SerielizeField] int a = 5;
+
+     [SerielizeField] int b = 13;
+
+     [SerielizeField] int c = 22;
+
+     
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Saludar("Jaime");
-        Saludar("Carlos");
+
+        print(Multiplicar(a, c));
+
     }
 
 
@@ -23,12 +32,14 @@ public class Cube : MonoBehaviour
 
     }
 
-    void Saludar(string a)
-    {
-        print("Hola "+ a);
+    float Multiplicar(int a, int c)
 
+    {
+        float resultado;
+        resultado = a * c;
+        return resultado;
     }
 
-   
+  
      
 }
